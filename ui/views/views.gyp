@@ -456,12 +456,6 @@
       'widget/desktop_aura/desktop_window_tree_host_win.cc',
       'widget/desktop_aura/desktop_window_tree_host_win.h',
     ],
-    'views_desktop_aura_ozone_sources': [
-      'widget/desktop_aura/desktop_factory_ozone.cc',
-      'widget/desktop_aura/desktop_factory_ozone.h',
-      'widget/desktop_aura/desktop_screen_ozone.cc',
-      'widget/desktop_aura/desktop_window_tree_host_ozone.cc',
-    ],
     'views_test_support_sources': [
       'controls/textfield/textfield_test_api.cc',
       'controls/textfield/textfield_test_api.h',
@@ -722,9 +716,6 @@
             }],
             ['OS == "win"', {
               'sources': [ '<@(views_desktop_aura_win_sources)' ],
-            }],
-            ['use_ozone==1', {
-              'sources': [ '<@(views_desktop_aura_ozone_sources)' ],
             }],
           ],
         }],
